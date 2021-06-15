@@ -1,56 +1,25 @@
-# CodeIgniter 4 Framework
+# Lab11_PHP_CI
 
-## What is CodeIgniter?
+- Nama : Purwanto
+- Kelas : TI.19.B2
+- NIM : 311910173
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](http://codeigniter.com).
+## Persiapan
+- Download kode file codeigniter 4 dari website resminya. Kemudian di extract pada folder /xampp/htdocs/lab11_ci.
+- Kemudian aktifkan extension yang di butuhkan untuk menjalankan codeigniter 4 melalui php.ini
+![2021-06-15_084032](https://user-images.githubusercontent.com/50513551/121985469-fc947480-cdbe-11eb-804f-602f572667e5.png)
 
-This repository holds the distributable version of the framework,
-including the user guide. It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## Menjalankan codeigniter
+- Buka terminal pada xampp dan masuk ke folder codeigniter
+- Kemudian jalankan perintah php spark server
+- Lalu akses http://localhost:8080
+![welcome](https://user-images.githubusercontent.com/50513551/121985580-382f3e80-cdbf-11eb-8479-7ee77dd36e57.png)
 
-More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
-
-The user guide corresponding to this version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
-
-
-## Important Change with index.php
-
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
-
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use Github issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Contributing
-
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
-
-## Server Requirements
-
-PHP version 7.3 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
-- xml (enabled by default - don't turn it off)
+## Membuat routes baru
+- Membuat routes baru di file app/config/routes.php
+- Jika baru membuat routesnya saja, maka jika di akses hasilnya not found, di karenakan belum ada isinya di halaman tersebut.
+![about](https://user-images.githubusercontent.com/50513551/121985884-cacfdd80-cdbf-11eb-8218-d5a237543269.png)
+- Kemudian untuk mengisi halaman about bisa langsung melalui contoller.
+![halaman about](https://user-images.githubusercontent.com/50513551/121985940-e3d88e80-cdbf-11eb-8af5-0bcbd8026c79.png)
+- Dan bisa di sempurnakan dengan template yang di sertai CSS yang di upload pada folder public.
+![about sempurna](https://user-images.githubusercontent.com/50513551/121985984-f5ba3180-cdbf-11eb-9fee-c3bddad64c62.png)
